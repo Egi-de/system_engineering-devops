@@ -1,5 +1,2 @@
 #!/bin/bash
-for dir in */
-do
-  chmod a+x "$dir"
-done
+for item in *; do if [ -d "$item" ]; then chmod a+x "$item"; fi; done
